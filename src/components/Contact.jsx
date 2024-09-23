@@ -12,24 +12,25 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row items-center space-x-12">
                 
                    <div className="flex-1">
-                        <h3 className="text-2xl font-bold">My Infor</h3>
+                        <h3 className="text-2xl font-bold">My Info</h3>
                         
 
                         <div className='mb-4 mt-8'>
                             <FaEnvelope className="inline-block text-indigo-800 mr-2"></FaEnvelope>
                             <a href="obettafaith24@gmail.com" className="hover:underline">
-                                obettafaith24@gmail.com
+                                taysten435@gmail.com
                             </a>
                         </div>
 
                         <div className='mb-4 '>
                             <FaPhone className="inline-block text-indigo-800 mr-2"></FaPhone>
-                            <span>+44 07721810275</span>
+                            <span>+447979758547</span>
                         </div>
 
                         <div className='mb-8 '>
                             <FaMapMarkedAlt className="inline-block text-indigo-800 mr-2"></FaMapMarkedAlt>
-                            <span className=""> 32 Ludovick Walk, SW15 5LE, London, United Kingdom</span>
+                            <span className=""> 19 Holyborne Avenue, Roehampton, London, United Kingdom.
+                            </span>
                         </div>
                    </div>
                    <div className='flex-1 w-full'>

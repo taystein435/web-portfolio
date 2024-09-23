@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between  p-10 lg:flex-row">
         <div>
           <a href="#" className="text-white font-mono text-3xl flex items-center">
-            Faith Obetta
+            Taiwo Babatunde Abdul
           </a>
         </div>
 
