@@ -5,7 +5,7 @@ const Footer = () => {
     <>
         <div className='mx-20 p-10'>
             <p className='text-white'>
-                &copy; {new Date().getFullYear()} Taiwo Abdul | All right reserved
+                &copy; {new Date().getFullYear()} Taiwo Babatunde Abdul | All right reserved
             </p>
         </div>
     </>
