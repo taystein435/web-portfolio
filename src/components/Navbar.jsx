@@ -1,5 +1,6 @@
 
 import { AiOutlineClose } from 'react-icons/ai';
+import { IoMenu } from "react-icons/io5";
 import { useState } from 'react';
 
 
@@ -31,7 +32,7 @@ const Navbar = () => {
           {/* Mobile Menu Toggle */}
           <div className="lg:hidden">
             <button onClick={toggleMobileMenu} className="text-white text-3xl">
-              {isMobileMenuOpen ? <AiOutlineClose /> : <AiOutlineClose />}
+              {!isMobileMenuOpen ? <IoMenu /> : <AiOutlineClose />}
             </button>
           </div>
         </div>
