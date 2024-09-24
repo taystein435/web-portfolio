@@ -3,6 +3,8 @@ import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
 import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
+import image7 from "../assets/image7.png";
+import image8 from "../assets/image8.png";
 
 import { FaGithub } from "react-icons/fa";
 
@@ -48,6 +50,22 @@ export default function Projects() {
       githubLink:
         "https://github.com/taystein435/Developers-and-Designers-Marketplace",
     },
+    {
+        id: 8,
+        title: "Imdb",
+        image: image7,
+        demoLink: "https://tay-imdb-clone.netlify.app",
+        githubLink:
+          "https://github.com/taystein435/",
+      },
+      {
+        id: 9,
+        title: "Netflix",
+        image: image8,
+        demoLink: "https://net-flix-clone2022.netlify.app/browse",
+        githubLink:
+          "https://github.com/taystein435/",
+      },
   ];
 
   return (
