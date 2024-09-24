@@ -32,7 +32,7 @@ const Home = () => {
         </p>
         <hr />
         <div className="flex mx-16 mt-6 space-x-6 cursor-pointer">
-          <a href="https://github.com/faithobetta">
+          <a href="https://github.com/taystein435">
             <FaGithub
               size={40}
               className="border-4 hover:border-indigo-800 rounded-full"
@@ -42,10 +42,12 @@ const Home = () => {
             size={40}
             className="border-4 hover:border-indigo-800 rounded-full"
           />
+            <a href="https://www.linkedin.com/in/taiwo-babatunde-abdul/">
           <BsLinkedin
             size={40}
             className="border-4 hover:border-indigo-800 rounded-full"
           />
+             </a>
           <BsTwitter
             size={40}
             className="border-4 hover:border-indigo-800 rounded-full"

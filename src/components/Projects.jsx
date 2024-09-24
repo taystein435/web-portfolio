@@ -1,76 +1,103 @@
-import logo from "../assets/logo.png"
-import image from "../assets/image.png"
-import image2 from "../assets/image2.png"
-import image3 from "../assets/image3.png"
-import {FaGithub} from "react-icons/fa"
+import image from "../assets/image.png";
+import image3 from "../assets/image3.png";
+import image4 from "../assets/image4.png";
+import image5 from "../assets/image5.png";
+import image6 from "../assets/image6.png";
 
-export default function Projects(){
+import { FaGithub } from "react-icons/fa";
 
-    return(
-        <>
-            <div className='bg-white m-10  max-w-full' id="projects">
-                <div className="grid justify-items-center m-10">
-                    <h1 className="text-3xl mt-10">My Projects</h1>
+export default function Projects() {
+  const projects = [
+    {
+      id: 2,
+      title: "CatPals",
+      image: image3,
+      demoLink: "https://cat-pals.vercel.app/",
+      githubLink: "https://github.com/taystein435",
+    },
+
+    {
+      id: 4,
+      title: "EventFinder",
+      image: image,
+      demoLink: "https://event-finder-zeta.vercel.app/",
+      githubLink: "https://github.com/taystein435",
+    },
+    {
+      id: 5,
+      title: "Airline App",
+      image: image4,
+      demoLink:
+        "https://airline-app-nextjs-shadcn-type-script-tailwind-postgress.vercel.app/",
+      githubLink:
+        "https://github.com/taystein435/Airline-App-Nextjs-Shadcn-TypeScript-Tailwind-Postgress-",
+    },
+    {
+      id: 6,
+      title: "Play Event",
+      image: image5,
+      demoLink: "https://playevents.netlify.app/",
+      githubLink:
+        "https://github.com/taystein435/playevents?tab=readme-ov-file",
+    },
+    {
+      id: 7,
+      title: "DevHub",
+      image: image6,
+      demoLink: "https://developers-and-designers-marketplace.vercel.app/",
+      githubLink:
+        "https://github.com/taystein435/Developers-and-Designers-Marketplace",
+    },
+  ];
+
+  return (
+    <>
+      <div className="bg-white m-10 max-w-full" id="projects">
+        <div className="grid justify-items-center m-10">
+          <h1 className="text-3xl mt-10 font-bold text-gray-800">
+            Some Of My Projects
+          </h1>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-5">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 overflow-hidden md:max-w-2xl hover:shadow-3xl transition-shadow duration-300 ease-in-out"
+            >
+              <div className="md:flex">
+                <div className="p-8">
+                  <div className="md:shrink-0 p-5">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-40 object-cover rounded-lg"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-lg font-semibold text-blue-600 hover:text-blue-400 transition-colors duration-200"
+                    >
+                      {project.title}
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-4xl text-gray-800 hover:text-gray-600 mt-2 inline-block transition-colors duration-200"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
-                    <div className="max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 overflow-hidden md:max-w-2xl hover:animate-pulse">
-                        <div className="md:flex">
-                            <div className="p-16">
-                                <div className="md:shrink-0 p-3">
-                                    <img src={logo} alt="" width={150} height={10} />
-                                </div>
-                                <a href="http://make-up-match.shop" className="uppercase tracking-wide p-6">Makeup Match</a>
-                                <a href="https://github.com/faithobetta/MakeupMatch" className="text-4xl"><FaGithub /></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 overflow-hidden md:max-w-2xl hover:animate-pulse">
-                        <div className="md:flex">
-                            <div className="p-16">
-                                <div className="md:shrink-0 p-5">
-                                    <img src={image} alt="" width={250} height={200} />
-                                </div>
-                                <a href="https://cat-pals.vercel.app/" className="uppercase tracking-wide p-2">CatPals</a>
-                                <a href="https://github.com/faithobetta/CatPals" className="text-4xl"><FaGithub /></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 overflow-hidden md:max-w-2xl hover:animate-pulse">
-                        <div className="md:flex">
-                            <div className="p-16">
-                                <div className="md:shrink-0 p-5">
-                                    <img src={image2} alt="" width={150} height={150} />
-                                </div>
-                                <a href="podcastapp-psi.vercel.app" className="uppercase tracking-wide p-6">Podcast</a>
-                                <a href="https://github.com/faithobetta/frontend-podcast" className="text-4xl"><FaGithub /></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 overflow-hidden md:max-w-2xl hover:animate-pulse">
-                        <div className="md:flex">
-                            <div className="p-16">
-                                <div className="md:shrink-0 p-5">
-                                    <img src={image3} alt="" width={150} height={150} />
-                                </div>
-                                <a href="https://event-finder-zeta.vercel.app/" className="uppercase tracking-wide p-6">EventFinder</a>
-                                <a href="https://github.com/faithobetta/EventFinder" className="text-4xl"><FaGithub /></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <hr />
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
-
-                </div>
+              </div>
             </div>
-        </>
-    )
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
-
